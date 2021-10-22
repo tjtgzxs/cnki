@@ -1,0 +1,1046 @@
+1634871067699	geckodriver	INFO	Listening on 127.0.0.1:49793
+1634871068677	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAtFWwH"
+
+(firefox:1053): GLib-GObject-CRITICAL **: 10:51:09.402: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:1053): Gtk-WARNING **: 10:51:10.198: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1053): Gtk-WARNING **: 10:51:13.215: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1053): Gtk-WARNING **: 10:51:13.304: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1053): Gtk-WARNING **: 10:51:13.330: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634871073882	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAtFWwH/search.json.mozlz4", (void 0)))
+1634871095629	Marionette	INFO	Listening on port 36315
+1634871096399	Marionette	INFO	Stopped listening on port 36315
+JavaScript error: resource://activity-stream/lib/PlacesFeed.jsm, line 221: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsINavBookmarksService.removeObserver]
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/ExtensionSettingsStore.jsm, line 122: Error: The ExtensionSettingsStore was accessed before the initialize promise resolved.
+console.error: "Could not load engine google@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2526\"  data: no]"
+console.error: "Could not load engine wikipedia@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2526\"  data: no]"
+console.error: "Could not load engine baidu@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2526\"  data: no]"
+console.error: "Could not load engine bing@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2526\"  data: no]"
+console.error: "Could not load engine ddg@search.mozilla.org: [Exception... \"AddonManager is not initialized\"  nsresult: \"0xc1f30001 (NS_ERROR_NOT_INITIALIZED)\"  location: \"JS frame :: resource://gre/modules/AddonManager.jsm :: installBuiltinAddon :: line 2526\"  data: no]"
+console.warn: SearchService: "_init: abandoning init due to shutting down"
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: 2147500036
+1634871152467	geckodriver	INFO	Listening on 127.0.0.1:37167
+1634871153065	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilec9ApKr"
+
+(firefox:1658): GLib-GObject-CRITICAL **: 10:52:33.366: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:1658): Gtk-WARNING **: 10:52:33.526: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1658): Gtk-WARNING **: 10:52:34.620: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1658): Gtk-WARNING **: 10:52:34.690: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1658): Gtk-WARNING **: 10:52:34.717: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634871155051	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilec9ApKr/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634871194569	Marionette	INFO	Listening on port 41129
+1634871195426	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:1658): GLib-GObject-WARNING **: 10:53:52.138: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fba277bbc40' of type 'MaiAtkType21'
+
+(firefox:1658): GLib-GObject-WARNING **: 10:53:52.385: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fba25702d80' of type 'MaiAtkType21'
+1634871244761	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+(firefox:1658): GLib-GObject-WARNING **: 10:54:23.854: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fb9eb7b67e0' of type 'MaiAtkType139'
+
+(firefox:1658): GLib-GObject-WARNING **: 10:54:23.867: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fb9eb521f60' of type 'MaiAtkType139'
+
+(firefox:1658): GLib-GObject-WARNING **: 10:55:21.438: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fb9ec6f8740' of type 'MaiAtkType21'
+
+(firefox:1658): GLib-GObject-WARNING **: 10:55:21.639: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fb9f7435560' of type 'MaiAtkType21'
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1634872135263	geckodriver	INFO	Listening on 127.0.0.1:44359
+1634872136860	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAA4H8c"
+
+(firefox:7471): GLib-GObject-CRITICAL **: 11:08:57.461: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:7471): Gtk-WARNING **: 11:08:57.677: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:7471): Gtk-WARNING **: 11:08:59.758: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:7471): Gtk-WARNING **: 11:08:59.865: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:7471): Gtk-WARNING **: 11:08:59.893: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634872140328	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAA4H8c/search.json.mozlz4", (void 0)))
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+JavaScript error: resource:///modules/UrlbarView.jsm, line 2163: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]'[JavaScript Error: "Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+_cacheL10nStrings@resource:///modules/UrlbarView.jsm:2163:11
+onQueryStarted@resource:///modules/UrlbarView.jsm:583:10
+notify@resource:///modules/UrlbarController.jsm:652:25
+startQuery@resource:///modules/UrlbarController.jsm:133:10
+startQuery@resource:///modules/UrlbarInput.jsm:1354:52
+_on_input@resource:///modules/UrlbarInput.jsm:3029:10
+handleEvent@resource:///modules/UrlbarInput.jsm:425:23
+" {file: "resource://gre/modules/SearchService.jsm" line: 213}]' when calling method: [nsISearchService::defaultEngine]
+1634872151481	Marionette	INFO	Listening on port 33489
+1634872151956	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+Marionette threw an error: TypeError: this.curBrowser.contentBrowser is null
+GeckoDriver.prototype.navigateTo@chrome://remote/content/marionette/driver.js:806:3
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x390141,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1634872231092	Marionette	INFO	Stopped listening on port 33489
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  Message: TypeError: NetworkError: Network request failed
+  Stack:
+    fetch/</request.onerror@resource://services-settings/Utils.jsm:117:16
+
+1634873308518	geckodriver	INFO	Listening on 127.0.0.1:56347
+1634873309201	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileXUOGwC"
+
+(firefox:15657): GLib-GObject-CRITICAL **: 11:28:29.324: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:15657): Gtk-WARNING **: 11:28:29.478: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:15657): Gtk-WARNING **: 11:28:30.030: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:15657): Gtk-WARNING **: 11:28:30.125: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:15657): Gtk-WARNING **: 11:28:30.155: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634873310446	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+keywordToURI@resource://gre/modules/URIFixup.jsm:492:1
+tryKeywordFixupForURIInfo@resource://gre/modules/URIFixup.jsm:726:41
+getFixupURIInfo@resource://gre/modules/URIFixup.jsm:349:32
+resolveURIInternal@resource:///modules/BrowserContentHandler.jsm:66:30
+dch_handle@resource:///modules/BrowserContentHandler.jsm:993:24
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXUOGwC/search.json.mozlz4", (void 0)))
+1634873319314	Marionette	INFO	Listening on port 35765
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634873320958	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://bot.sannysoft.com/, line 148: TypeError: Navigator.sendBeacon: At least 1 argument required, but only 0 passed
+JavaScript error: https://bot.sannysoft.com/, line 196: TypeError: navigator.getUserMedia is not a function
+JavaScript warning: https://bot.sannysoft.com/fpCollect.min.js, line 122: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://bot.sannysoft.com/, line 605: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: https://bot.sannysoft.com/, line 299: TypeError: navigator.getBattery is not a function
+JavaScript error: https://bot.sannysoft.com/, line 340: ReferenceError: $ is not defined
+1634873682713	geckodriver	INFO	Listening on 127.0.0.1:53197
+1634873683308	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBO2Erb"
+
+(firefox:17805): GLib-GObject-CRITICAL **: 11:34:43.364: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:17805): Gtk-WARNING **: 11:34:43.415: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:17805): Gtk-WARNING **: 11:34:43.827: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:17805): Gtk-WARNING **: 11:34:43.895: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:17805): Gtk-WARNING **: 11:34:43.923: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634873684082	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+keywordToURI@resource://gre/modules/URIFixup.jsm:492:1
+tryKeywordFixupForURIInfo@resource://gre/modules/URIFixup.jsm:726:41
+getFixupURIInfo@resource://gre/modules/URIFixup.jsm:349:32
+resolveURIInternal@resource:///modules/BrowserContentHandler.jsm:66:30
+dch_handle@resource:///modules/BrowserContentHandler.jsm:993:24
+
+1634873692288	Marionette	INFO	Stopped listening on port 35765
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 15657, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBO2Erb/search.json.mozlz4", (void 0)))
+1634873701428	Marionette	INFO	Listening on port 43529
+1634873701475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+console.error: services.settings: 
+  Message: TypeError: NetworkError: Network request failed
+  Stack:
+    fetch/</request.onerror@resource://services-settings/Utils.jsm:117:16
+
+1634873749988	Marionette	INFO	Stopped listening on port 43529
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1634873911491	geckodriver	INFO	Listening on 127.0.0.1:58073
+1634873912080	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6l09r1"
+
+(firefox:19238): GLib-GObject-CRITICAL **: 11:38:32.107: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:19238): Gtk-WARNING **: 11:38:32.331: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:19238): Gtk-WARNING **: 11:38:33.280: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:19238): Gtk-WARNING **: 11:38:33.357: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:19238): Gtk-WARNING **: 11:38:33.384: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634873913616	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+keywordToURI@resource://gre/modules/URIFixup.jsm:492:1
+tryKeywordFixupForURIInfo@resource://gre/modules/URIFixup.jsm:726:41
+getFixupURIInfo@resource://gre/modules/URIFixup.jsm:349:32
+resolveURIInternal@resource:///modules/BrowserContentHandler.jsm:66:30
+dch_handle@resource:///modules/BrowserContentHandler.jsm:993:24
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6l09r1/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634873924651	Marionette	INFO	Listening on port 43503
+1634873926700	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634874126614	Marionette	INFO	Stopped listening on port 43503
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634874352753	Marionette	INFO	Stopped listening on port 41129
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634874358309	geckodriver	INFO	Listening on 127.0.0.1:36477
+1634874359966	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6lXsz0"
+
+(firefox:21710): GLib-GObject-CRITICAL **: 11:46:01.137: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:21710): Gtk-WARNING **: 11:46:01.878: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:21710): Gtk-WARNING **: 11:46:05.055: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:21710): Gtk-WARNING **: 11:46:05.151: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:21710): Gtk-WARNING **: 11:46:05.186: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634874365667	Marionette	INFO	Marionette enabled
+JavaScript error: resource://gre/modules/SearchService.jsm, line 213: Error: Something tried to use the search service before it's been properly intialized. Please examine the stack trace to figure out what and where to fix it:
+_ensureInitialized@resource://gre/modules/SearchService.jsm:213:15
+_getEngineDefault@resource://gre/modules/SearchService.jsm:2157:10
+get defaultEngine@resource://gre/modules/SearchService.jsm:2289:17
+keywordToURI@resource://gre/modules/URIFixup.jsm:492:1
+tryKeywordFixupForURIInfo@resource://gre/modules/URIFixup.jsm:726:41
+getFixupURIInfo@resource://gre/modules/URIFixup.jsm:349:32
+resolveURIInternal@resource:///modules/BrowserContentHandler.jsm:66:30
+dch_handle@resource:///modules/BrowserContentHandler.jsm:993:24
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6lXsz0/search.json.mozlz4", (void 0)))
+1634874373694	Marionette	INFO	Listening on port 37457
+1634874374050	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634874841289	geckodriver	INFO	Listening on 127.0.0.1:33857
+1634874842890	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledhd8ss"
+
+(firefox:24486): GLib-GObject-CRITICAL **: 11:54:03.310: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:24486): Gtk-WARNING **: 11:54:03.397: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:24486): Gtk-WARNING **: 11:54:04.122: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:24486): Gtk-WARNING **: 11:54:04.252: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:24486): Gtk-WARNING **: 11:54:04.294: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634874844497	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledhd8ss/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634874852954	Marionette	INFO	Listening on port 45337
+1634874853403	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634874864684	Marionette	INFO	Stopped listening on port 45337
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1634875070145	Marionette	INFO	Stopped listening on port 37457
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  Message: TypeError: NetworkError: Network request failed
+  Stack:
+    fetch/</request.onerror@resource://services-settings/Utils.jsm:117:16
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634875074267	geckodriver	INFO	Listening on 127.0.0.1:60777
+1634875074941	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileaCfBKo"
+
+(firefox:25895): GLib-GObject-CRITICAL **: 11:57:54.975: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:25895): Gtk-WARNING **: 11:57:55.058: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:25895): Gtk-WARNING **: 11:57:55.564: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:25895): Gtk-WARNING **: 11:57:55.644: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:25895): Gtk-WARNING **: 11:57:55.678: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634875075968	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaCfBKo/search.json.mozlz4", (void 0)))
+1634875079028	Marionette	INFO	Listening on port 34529
+1634875079069	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634875131093	Marionette	INFO	Stopped listening on port 34529
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634875133373	geckodriver	INFO	Listening on 127.0.0.1:42153
+1634875134008	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile6M7hH7"
+
+(firefox:26392): GLib-GObject-CRITICAL **: 11:58:54.034: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:26392): Gtk-WARNING **: 11:58:54.065: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:26392): Gtk-WARNING **: 11:58:54.372: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:26392): Gtk-WARNING **: 11:58:54.440: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:26392): Gtk-WARNING **: 11:58:54.470: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634875134637	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile6M7hH7/search.json.mozlz4", (void 0)))
+1634875137478	Marionette	INFO	Listening on port 37441
+1634875137532	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://kns.cnki.net"
+
+(firefox:26392): GLib-GObject-WARNING **: 12:00:26.637: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f536abfc6a0' of type 'MaiAtkType139'
+
+(firefox:26392): GLib-GObject-WARNING **: 12:00:26.638: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f536abfca60' of type 'MaiAtkType139'
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1634876313740	Marionette	INFO	Stopped listening on port 37441
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  Message: TypeError: NetworkError: Network request failed
+  Stack:
+    fetch/</request.onerror@resource://services-settings/Utils.jsm:117:16
+
+console.warn: services.settings: main/search-telemetry sync interrupted by shutdown
+console.warn: services.settings: main/websites-with-shared-credential-backends sync interrupted by shutdown
+console.warn: services.settings: main/password-rules sync interrupted by shutdown
+console.warn: services.settings: main/cfr sync interrupted by shutdown
+console.warn: services.settings: main/top-sites sync interrupted by shutdown
+1634876441670	geckodriver	INFO	Listening on 127.0.0.1:44199
+1634876442291	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezKvc7w"
+
+(firefox:856): GLib-GObject-CRITICAL **: 12:20:42.324: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:856): Gtk-WARNING **: 12:20:42.355: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:856): Gtk-WARNING **: 12:20:42.612: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:856): Gtk-WARNING **: 12:20:42.677: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:856): Gtk-WARNING **: 12:20:42.704: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634876442843	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezKvc7w/search.json.mozlz4", (void 0)))
+1634876445444	Marionette	INFO	Listening on port 38767
+1634876445511	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+
+(firefox:856): GLib-GObject-WARNING **: 12:22:59.535: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd1d0e5f7e0' of type 'MaiAtkType139'
+
+(firefox:856): GLib-GObject-WARNING **: 12:22:59.535: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7fd1d0e5f290' of type 'MaiAtkType139'
+1634876618053	geckodriver	INFO	Listening on 127.0.0.1:40685
+1634876618786	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTAul5g"
+
+(firefox:1986): GLib-GObject-CRITICAL **: 12:23:39.032: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:1986): Gtk-WARNING **: 12:23:39.232: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1986): Gtk-WARNING **: 12:23:39.783: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1986): Gtk-WARNING **: 12:23:39.869: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:1986): Gtk-WARNING **: 12:23:39.901: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634876620086	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileTAul5g/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634876636750	Marionette	INFO	Listening on port 40609
+1634876643603	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634876789399	geckodriver	INFO	Listening on 127.0.0.1:51909
+1634876791136	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQlujvJ"
+
+(firefox:2985): GLib-GObject-CRITICAL **: 12:26:32.103: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:2985): Gtk-WARNING **: 12:26:32.754: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:2985): Gtk-WARNING **: 12:26:37.055: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:2985): Gtk-WARNING **: 12:26:37.184: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:2985): Gtk-WARNING **: 12:26:37.237: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634876798037	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQlujvJ/search.json.mozlz4", (void 0)))
+console.error: "Could not write session state file " (new Error("_initWorker called too early! Please read the session file from disk first.", "resource:///modules/sessionstore/SessionFile.jsm", 394)) "_initWorker/<@resource:///modules/sessionstore/SessionFile.jsm:394:15\n_initWorker@resource:///modules/sessionstore/SessionFile.jsm:387:12\n_postToWorker@resource:///modules/sessionstore/SessionFile.jsm:429:16\nwrite@resource:///modules/sessionstore/SessionFile.jsm:467:24\nwrite@resource:///modules/sessionstore/SessionFile.jsm:75:32\n_writeState@resource:///modules/sessionstore/SessionSaver.jsm:367:24\n_saveState@resource:///modules/sessionstore/SessionSaver.jsm:301:17\n_saveStateAsync@resource:///modules/sessionstore/SessionSaver.jsm:351:10\nsaveStateAsyncWhenIdle@resource:///modules/sessionstore/SessionSaver.jsm:198:14\ncallback@resource://gre/modules/Timer.jsm:127:16\n"
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634876833873	Marionette	INFO	Listening on port 39081
+1634876834429	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1634877055379	geckodriver	INFO	Listening on 127.0.0.1:36359
+1634877067368	geckodriver	INFO	Listening on 127.0.0.1:33479
+1634877068373	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileviR92i"
+
+(firefox:4600): GLib-GObject-CRITICAL **: 12:31:10.038: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:4600): Gtk-WARNING **: 12:31:13.057: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:4600): Gtk-WARNING **: 12:31:18.893: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:4600): Gtk-WARNING **: 12:31:19.013: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:4600): Gtk-WARNING **: 12:31:19.091: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634877080001	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileviR92i/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1634877147358	geckodriver	INFO	Listening on 127.0.0.1:35111
+1634877149419	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileLEZuJP"
+
+(firefox:5177): GLib-GObject-CRITICAL **: 12:32:30.789: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:5177): Gtk-WARNING **: 12:32:32.474: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:5177): Gtk-WARNING **: 12:32:42.944: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:5177): Gtk-WARNING **: 12:32:43.065: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:5177): Gtk-WARNING **: 12:32:43.104: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634877163878	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLEZuJP/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1634877228910	Marionette	INFO	Stopped listening on port 38767
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: services.settings: 
+  Message: TypeError: NetworkError: Network request failed
+  Stack:
+    fetch/</request.onerror@resource://services-settings/Utils.jsm:117:16
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634877260897	Marionette	INFO	Stopped listening on port 40609
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1634877263427	Marionette	INFO	Stopped listening on port 39081
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1634877301232	geckodriver	INFO	Listening on 127.0.0.1:37547
+1634877302014	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJ9DvDQ"
+
+(firefox:6018): GLib-GObject-CRITICAL **: 12:35:04.686: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:6018): Gtk-WARNING **: 12:35:05.303: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:6018): Gtk-WARNING **: 12:35:09.565: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:6018): Gtk-WARNING **: 12:35:09.811: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:6018): Gtk-WARNING **: 12:35:09.844: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634877310858	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileJ9DvDQ/search.json.mozlz4", (void 0)))
+1634877321275	Marionette	INFO	Listening on port 45783
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634877322817	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+
+(firefox:6018): GLib-GObject-WARNING **: 12:37:31.693: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f6000e45e20' of type 'MaiAtkType139'
+
+(firefox:6018): GLib-GObject-WARNING **: 12:37:31.693: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f6000e45f10' of type 'MaiAtkType139'
+1634877641738	Marionette	INFO	Stopped listening on port 45783
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1634877645508	geckodriver	INFO	Listening on 127.0.0.1:48613
+1634877646054	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5oZS68"
+
+(firefox:8537): GLib-GObject-CRITICAL **: 12:40:46.077: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:8537): Gtk-WARNING **: 12:40:46.113: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:8537): Gtk-WARNING **: 12:40:46.379: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:8537): Gtk-WARNING **: 12:40:46.444: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:8537): Gtk-WARNING **: 12:40:46.470: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634877646607	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5oZS68/search.json.mozlz4", (void 0)))
+1634877651218	Marionette	INFO	Listening on port 34997
+1634877651279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+1634877750677	geckodriver	INFO	Listening on 127.0.0.1:36767
+1634877751230	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilex8eI1Q"
+
+(firefox:9421): GLib-GObject-CRITICAL **: 12:42:31.254: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:9421): Gtk-WARNING **: 12:42:31.290: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:9421): Gtk-WARNING **: 12:42:31.552: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:9421): Gtk-WARNING **: 12:42:31.615: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:9421): Gtk-WARNING **: 12:42:31.641: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634877751777	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilex8eI1Q/search.json.mozlz4", (void 0)))
+1634877754533	Marionette	INFO	Listening on port 34887
+1634877754552	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634877893221	Marionette	INFO	Stopped listening on port 34997
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634877895065	Marionette	INFO	Stopped listening on port 34887
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1634881641211	geckodriver	INFO	Listening on 127.0.0.1:41347
+1634881641759	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileA6K1Vh"
+
+(firefox:30604): GLib-GObject-CRITICAL **: 13:47:21.783: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:30604): Gtk-WARNING **: 13:47:21.809: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:30604): Gtk-WARNING **: 13:47:22.061: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:30604): Gtk-WARNING **: 13:47:22.126: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:30604): Gtk-WARNING **: 13:47:22.153: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634881642292	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileA6K1Vh/search.json.mozlz4", (void 0)))
+1634881645195	Marionette	INFO	Listening on port 37335
+1634881645280	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+
+(firefox:30604): GLib-GObject-WARNING **: 13:49:32.302: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f1ad52c8c40' of type 'MaiAtkType139'
+
+(firefox:30604): GLib-GObject-WARNING **: 13:49:32.302: ../../../gobject/gsignal.c:3492: signal name 'load_complete' is invalid for instance '0x7f1ad52c8b00' of type 'MaiAtkType139'
+SourceActor threw an exception: [Exception... "Failed to open input source 'javascript:void(0)'"  nsresult: "0x80040111 (NS_ERROR_NOT_AVAILABLE)"  location: "JS frame :: resource://devtools/shared/DevToolsUtils.js :: mainThreadFetch/< :: line 670"  data: yes]
+Stack: mainThreadFetch/<@resource://devtools/shared/DevToolsUtils.js:670:15
+mainThreadFetch@resource://devtools/shared/DevToolsUtils.js:516:10
+_fetchURLContents@resource://devtools/server/actors/utils/sources-manager.js:442:22
+urlContents@resource://devtools/server/actors/utils/sources-manager.js:406:17
+_resurrectSource@resource://devtools/server/actors/thread.js:2091:35
+addAllSources@resource://devtools/server/actors/thread.js:1446:14
+watch@resource://devtools/server/actors/resources/sources.js:52:17
+watchResources@resource://devtools/server/actors/resources/index.js:242:19
+_watchTargetResources@resource://devtools/server/actors/targets/target-actor-mixin.js:159:24
+addWatcherDataEntry@resource://devtools/server/actors/targets/target-actor-mixin.js:50:20
+_addWatcherDataEntry@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:576:24
+receiveMessage@resource://devtools/server/connectors/js-window-actor/DevToolsFrameChild.jsm:490:21
+Line: 670, column: 0
+console.error: ({})
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 670: NS_ERROR_NOT_AVAILABLE: Failed to open input source 'javascript:void(0)'
+1634881779703	geckodriver	INFO	Listening on 127.0.0.1:34563
+1634881780261	mozrunner::runner	INFO	Running command: "/data/home/tjtgzxs/software/firefox/firefox" "--marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAJpqni"
+
+(firefox:31567): GLib-GObject-CRITICAL **: 13:49:40.286: g_value_set_boxed: assertion 'G_VALUE_HOLDS_BOXED (value)' failed
+
+(firefox:31567): Gtk-WARNING **: 13:49:40.321: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:31567): Gtk-WARNING **: 13:49:40.683: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:31567): Gtk-WARNING **: 13:49:40.749: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+
+(firefox:31567): Gtk-WARNING **: 13:49:40.781: Theme parsing error: gtk.css:3611:22: 'none' is not a valid color name
+1634881780955	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAJpqni/search.json.mozlz4", (void 0)))
+1634881783636	Marionette	INFO	Listening on port 36233
+1634881783694	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1634881786957	Marionette	INFO	Stopped listening on port 37335
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
