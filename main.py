@@ -2,8 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver import Firefox
+from webdriver_manager.chrome import ChromeDriverManager
 from  selenium.webdriver.firefox.options import  Options
 import time
+from selenium.webdriver.chrome.service import Service
 def open_url():
     firefox_options=Options()
     # firefox_options.add_argument("--headless")
@@ -30,6 +32,13 @@ def open_url():
     tr_list=driver.find_elements_by_xpath("//table[@class='result-table-list']/tbody/tr")
     for tr in tr_list:
         name=tr.find_element_by_class_name("name").text
+        author=tr.find_element_by_class_name("author").text
+        source=tr.find_element_by_class_name("source").text
+        date=tr.find_element_by_class_name("date").text
+        quote=tr.find_element_by_class_name("quote").text
+        download=tr.find_element_by_class_name("download").text
+        handles = driver.window_handles
+        driver.switch_to.window(handles[1])
         print(name)
     time.sleep(50)
 # Press the green button in the gutter to run the script.
