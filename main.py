@@ -17,6 +17,9 @@ from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfparser import PDFParser
 import  re
+import xlrd
+import xlwt
+from xlutils.copy import  copy
 def open_url():
     firefox_options = Options()
     # firefox_options.add_argument("--headless")
@@ -106,7 +109,19 @@ def re_find(value):
             return  number[0]
     return None
 
-
+def append_excel(path,value,name=""):
+    index=len(value)
+    workbook=xlrd.open_workbook(path)
+    sheets=workbook.sheet_names()
+    worksheet=workbook.sheet_by_name(sheets[0])
+    rows_old=worksheet.nrows
+    new_workbook=copy(workbook)
+    new_worksheet=new_workbook.get_sheet(0)
+    for i in range(0,index):
+        for j in range(0,len(value[i])):
+            new_worksheet.write(i+rows_old,j,value[i][j])
+    new_workbook.save(path)
+    print("{name}追加成功".format(name=name))
 
 
 
