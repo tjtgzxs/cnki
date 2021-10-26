@@ -59,21 +59,86 @@ def open_url():
 
 def get_detail(driver):
     tr_list = driver.find_elements_by_xpath("//table[@class='result-table-list']/tbody/tr")
+
     for tr in tr_list:
-        name = tr.find_element_by_class_name("name").text
-        author = tr.find_element_by_class_name("author").text
+        data=[]
+        data.append(tr.find_element_by_class_name("name").text)
+        # data.append(tr.find_element_by_class_name("author").text)
         source = tr.find_element_by_class_name("source").text
         date = tr.find_element_by_class_name("date").text
         quote = tr.find_element_by_class_name("quote").text
         download = tr.find_element_by_class_name("download").text
-        print(name)
 
         window=driver.current_window_handle
         detail_button=tr.find_element_by_class_name("name").click()
         time.sleep(50)
         windows = driver.window_handles
         detail=driver.switch_to.window(windows[-1])
-        print( driver.find_element_by_id("ChDivSummary").text)
+        authorlist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[1]//a")
+        companylist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[2]//a")
+        company_data=[]
+        author_data=[]
+        for author in authorlist:
+            author_text=author.text
+            author_data.append(author_text.rstrip('123456789'))
+
+        for company in companylist:
+            company_text=company.text
+            if company_text.find(".")>-1:
+                company_data.append(company_text[company_text.find(".")+1:])
+            else:
+                company_data.append(company_text)
+        data.append(author_data[0])
+        data.append(company_data[0])
+        try:
+            data.append(author_data[1])
+        except:
+            data.append("")
+        try:
+            data.append(company_data[1])
+        except:
+            data.append("")
+        try:
+            data.append(author_data[2])
+        except:
+            data.append("")
+        try:
+            data.append(company_data[2])
+        except:
+            data.append("")
+        data.append("期刊")
+        data.append(date)
+        data.append(source)
+        toplist = driver.find_elements_by_xpath("//div[@class='top-tip']/a")
+        core_flag=False
+        CS_flag=False
+        for top in toplist:
+            if top.text.find("核心")>-1:
+                core_flag=True
+            if top.text.find("CSSCI")>-1:
+                CS_flag=True
+        if core_flag==True:
+            data.append("1")
+        else:
+            data.append("0")
+        if CS_flag == True:
+            data.append("1")
+        else:
+            data.append("0")
+        data.append(quote)
+        data.append(download)
+        keylist = driver.find_elements_by_xpath("//p[@class='keywords']/a")
+        key_data=[]
+        for key in  keylist:
+            key_data.append(key.text.rstrip(";"))
+        for i in range(0,4):
+            try:
+                data.append(key_data[i])
+            except:
+                data.append("")
+
+
+        # print( driver.find_element_by_id("ChDivSummary").text)
         driver.close()
         driver.switch_to.window(window)
 
