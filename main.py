@@ -19,12 +19,21 @@ from pdfminer.pdfparser import PDFParser
 import  re
 import xlrd
 import xlwt
+import os
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from xlutils.copy import  copy
+import configparser
 def open_url():
+
     firefox_options = Options()
     # firefox_options.add_argument("--headless")
     # firefox_options.add_argument("User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0")
-    driver = Firefox(executable_path="./geckodriver",options=firefox_options)
+    config = configparser.ConfigParser()
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+    config.read(os.path.join(BASE_DIR, 'conf.ini'), encoding="utf-8")
+    firefox = config.get("spider", "firefox")
+    binary = FirefoxBinary(firefox)
+    driver = Firefox(firefox_binary=binary,options=firefox_options)
     # driver=Firefox()
     # driver.get('https://bot.sannysoft.com/')
     # time.sleep(5)
@@ -38,7 +47,7 @@ def open_url():
     time.sleep(2)
     a = driver.find_element_by_class_name('search-btn')
     a.click()
-    time.sleep(10)
+    time.sleep(20)
     ch = driver.find_element_by_class_name("ch")
     ch.click()
     time.sleep(10)
@@ -58,17 +67,19 @@ def open_url():
 
 
 def get_detail(driver):
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     tr_list = driver.find_elements_by_xpath("//table[@class='result-table-list']/tbody/tr")
 
     for tr in tr_list:
         data=[]
+        name=tr.find_element_by_class_name("name").text
         data.append(tr.find_element_by_class_name("name").text)
         # data.append(tr.find_element_by_class_name("author").text)
         source = tr.find_element_by_class_name("source").text
         date = tr.find_element_by_class_name("date").text
         quote = tr.find_element_by_class_name("quote").text
         download = tr.find_element_by_class_name("download").text
-
+        # print(quote,download)
         window=driver.current_window_handle
         detail_button=tr.find_element_by_class_name("name").click()
         time.sleep(50)
@@ -113,6 +124,7 @@ def get_detail(driver):
         core_flag=False
         CS_flag=False
         for top in toplist:
+            print(top.text)
             if top.text.find("核心")>-1:
                 core_flag=True
             if top.text.find("CSSCI")>-1:
@@ -125,8 +137,8 @@ def get_detail(driver):
             data.append("1")
         else:
             data.append("0")
-        data.append(quote)
-        data.append(download)
+        data.append(str(quote))
+        data.append(str(download))
         keylist = driver.find_elements_by_xpath("//p[@class='keywords']/a")
         key_data=[]
         for key in  keylist:
@@ -136,8 +148,28 @@ def get_detail(driver):
                 data.append(key_data[i])
             except:
                 data.append("")
+        topic=driver.find_element_by_xpath("//div[@class='doc-top']/div[7]/ul/li[3]/p").text
+        topic_list=topic.split(";")
+        for i in range(0,2):
+            try:
+                data.append(topic_list[i])
+            except:
+                data.append("")
 
 
+        summary=driver.find_element_by_class_name("abstract-text").text
+        last_year=re_find(summary)
+        if last_year==False:
+            pdf_value=PDFHandle(name=os.path.join(BASE_DIR,os.path.join("pdf", (str(name)+".pdf"))))
+            last_year2=re_find(pdf_value)
+            if last_year2==False:
+                data.append("")
+            else:
+                data.append(last_year2)
+        else:
+            data.append(last_year)
+
+        append_excel(os.path.join(BASE_DIR,'output.xls'),data,name)
         # print( driver.find_element_by_id("ChDivSummary").text)
         driver.close()
         driver.switch_to.window(window)
@@ -145,18 +177,22 @@ def get_detail(driver):
     time.sleep(10)
 
 
-def PDFHandle():
+def PDFHandle(name):
     output_string = StringIO()
-    with open('test.pdf', 'rb') as in_file:
-        parser = PDFParser(in_file)
-        doc = PDFDocument(parser)
-        rsrcmgr = PDFResourceManager()
-        device = TextConverter(rsrcmgr, output_string, laparams=LAParams())
-        interpreter = PDFPageInterpreter(rsrcmgr, device)
-        for page in PDFPage.create_pages(doc):
-            interpreter.process_page(page)
+    try:
+        with open(name, 'rb') as in_file:
+            parser = PDFParser(in_file)
+            doc = PDFDocument(parser)
+            rsrcmgr = PDFResourceManager()
+            device = TextConverter(rsrcmgr, output_string, laparams=LAParams())
+            interpreter = PDFPageInterpreter(rsrcmgr, device)
+            for page in PDFPage.create_pages(doc):
+                interpreter.process_page(page)
+            return output_string.getvalue()
+    except:
+        print("未找到{name}.pdf".format(name=name))
+        return  False
 
-    return  output_string.getvalue(),
 def re_find(value):
 
     list1=[r'第\d+期CGSS',r"第d+期中国综合社会调查",r"CGSS第\d+期",r"中国综合社会调查第\d+期"]
@@ -172,7 +208,7 @@ def re_find(value):
         if len(m)>0:
             number=re.findall(r"\d+",m[0])
             return  number[0]
-    return None
+    return False
 
 def append_excel(path,value,name=""):
     index=len(value)
@@ -183,8 +219,7 @@ def append_excel(path,value,name=""):
     new_workbook=copy(workbook)
     new_worksheet=new_workbook.get_sheet(0)
     for i in range(0,index):
-        for j in range(0,len(value[i])):
-            new_worksheet.write(i+rows_old,j,value[i][j])
+       new_worksheet.write(rows_old,i,value[i])
     new_workbook.save(path)
     print("{name}追加成功".format(name=name))
 
@@ -202,3 +237,6 @@ if __name__ == '__main__':
 
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+
+['检验环境关心量表的中国版(CNEP)——基于CGSS2010数据的再分析', '洪大用', ' 中国人民大学社会学系', '范叶超', ' 美利坚大学社会学系', '肖晨阳', '', '期刊', '2014-07-20', '社会学表', '心态体系', '专辑：', '']
