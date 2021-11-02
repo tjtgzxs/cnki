@@ -61,7 +61,9 @@ def open_url():
     webdriver.ActionChains(driver).move_to_element(page_a).click(page_a).perform()
     driver.find_element_by_link_text("50").click()  #
     time.sleep(20)
-    driver.find_element_by_id('page8').click()
+    driver.find_element_by_id('page9').click()
+    time.sleep(2)
+    driver.find_element_by_id('page13').click()
     time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
