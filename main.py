@@ -61,9 +61,7 @@ def open_url():
     webdriver.ActionChains(driver).move_to_element(page_a).click(page_a).perform()
     driver.find_element_by_link_text("50").click()  #
     time.sleep(20)
-    driver.find_element_by_id('PageNext').click()
-    time.sleep(2)
-    driver.find_element_by_id('PageNext').click()
+    driver.find_element_by_id('page8').click()
     time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
@@ -107,8 +105,15 @@ def get_detail(driver):
                 company_data.append(company_text[company_text.find(".")+1:])
             else:
                 company_data.append(company_text)
-        data.append(author_data[0])
-        data.append(company_data[0])
+        try:
+            data.append(author_data[0])
+        except:
+            data.append("")
+        try:
+            data.append(company_data[0])
+        except:
+            data.append("")
+
         try:
             data.append(author_data[1])
         except:
