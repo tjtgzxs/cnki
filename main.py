@@ -33,11 +33,14 @@ def open_url():
     config.read(os.path.join(BASE_DIR, 'conf.ini'), encoding="utf-8")
     firefox = config.get("spider", "firefox")
     binary = FirefoxBinary(firefox)
-    driver = Firefox(firefox_binary=binary,options=firefox_options)
+    # driver = Firefox(firefox_binary=binary,options=firefox_options)
+    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+    driver.maximize_window()
     # driver=Firefox()
     # driver.get('https://bot.sannysoft.com/')
     # time.sleep(5)
     # driver.save_screenshot('walkaround.png')
+    print(111)
     driver.get("https://www.cnki.net/")
     time.sleep(5)
     a = driver.find_element_by_class_name('sort-default')
@@ -58,10 +61,14 @@ def open_url():
     webdriver.ActionChains(driver).move_to_element(page_a).click(page_a).perform()
     driver.find_element_by_link_text("50").click()  #
     time.sleep(20)
-    next_btn=driver.find_element_by_id('PageNext')
+    driver.find_element_by_id('PageNext').click()
+    time.sleep(2)
+    driver.find_element_by_id('PageNext').click()
+    time.sleep(2)
     get_detail(driver)
-    while(next_btn.is_enabled()):
-        next_btn.click()
+    while(driver.find_element_by_id('PageNext').is_enabled()):
+        time.sleep(2)
+        driver.find_element_by_id('PageNext').click()
         time.sleep(20)
         get_detail(driver)
 
@@ -81,12 +88,13 @@ def get_detail(driver):
         download = tr.find_element_by_class_name("download").text
         # print(quote,download)
         window=driver.current_window_handle
-        detail_button=tr.find_element_by_class_name("name").click()
-        time.sleep(50)
+        detail_button=tr.find_element_by_class_name("fz14").click()
+        # webdriver.ActionChains(driver).move_to_element(name).click(name).perform()
+        time.sleep(10)
         windows = driver.window_handles
         detail=driver.switch_to.window(windows[-1])
         authorlist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[1]//a")
-        companylist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[2]//a")
+        companylist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[2]//a|//div[@class='brief']/div/h3[2]//span")
         company_data=[]
         author_data=[]
         for author in authorlist:
@@ -148,7 +156,7 @@ def get_detail(driver):
                 data.append(key_data[i])
             except:
                 data.append("")
-        topic=driver.find_element_by_xpath("//div[@class='doc-top']/div[7]/ul/li[3]/p").text
+        topic=driver.find_element_by_xpath("//div[@class='doc-top']//li[last()-1]/p").text
         topic_list=topic.split(";")
         for i in range(0,2):
             try:
@@ -160,12 +168,15 @@ def get_detail(driver):
         summary=driver.find_element_by_class_name("abstract-text").text
         last_year=re_find(summary)
         if last_year==False:
-            pdf_value=PDFHandle(name=os.path.join(BASE_DIR,os.path.join("pdf", (str(name)+".pdf"))))
-            last_year2=re_find(pdf_value)
-            if last_year2==False:
+            pdf_value=PDFHandle(name=os.path.join(BASE_DIR,os.path.join("pdf", (str(name)))))
+            if pdf_value==False:
                 data.append("")
             else:
-                data.append(last_year2)
+                last_year2=re_find(pdf_value)
+                if last_year2==False:
+                    data.append("")
+                else:
+                    data.append(last_year2)
         else:
             data.append(last_year)
 
@@ -239,4 +250,4 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
 
-['检验环境关心量表的中国版(CNEP)——基于CGSS2010数据的再分析', '洪大用', ' 中国人民大学社会学系', '范叶超', ' 美利坚大学社会学系', '肖晨阳', '', '期刊', '2014-07-20', '社会学表', '心态体系', '专辑：', '']
+# ['检验环境关心量表的中国版(CNEP)——基于CGSS2010数据的再分析', '洪大用', ' 中国人民大学社会学系', '范叶超', ' 美利坚大学社会学系', '肖晨阳', '', '期刊', '2014-07-20', '社会学表', '心态体系', '专辑：', '']
