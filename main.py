@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver import Firefox
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.chrome.options import Options
 import time
 from selenium.webdriver.chrome.service import Service
 from io import StringIO
@@ -25,21 +25,15 @@ from xlutils.copy import  copy
 import configparser
 def open_url():
 
-    firefox_options = Options()
-    # firefox_options.add_argument("--headless")
-    # firefox_options.add_argument("User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:93.0) Gecko/20100101 Firefox/93.0")
+
     config = configparser.ConfigParser()
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     config.read(os.path.join(BASE_DIR, 'conf.ini'), encoding="utf-8")
-    firefox = config.get("spider", "firefox")
-    binary = FirefoxBinary(firefox)
-    # driver = Firefox(firefox_binary=binary,options=firefox_options)
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install())
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options=chrome_options)
     driver.maximize_window()
-    # driver=Firefox()
-    # driver.get('https://bot.sannysoft.com/')
-    # time.sleep(5)
-    # driver.save_screenshot('walkaround.png')
     print(111)
     driver.get("https://www.cnki.net/")
     time.sleep(5)
@@ -66,6 +60,10 @@ def open_url():
     driver.find_element_by_id('page13').click()
     time.sleep(2)
     driver.find_element_by_id('page17').click()
+    time.sleep(2)
+    driver.find_element_by_id('page21').click()
+    time.sleep(2)
+    driver.find_element_by_id('page22').click()
     time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
