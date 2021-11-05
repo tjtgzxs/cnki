@@ -1,4 +1,5 @@
 astroid==2.4.2
+Bottleneck==1.3.2
 brotlipy==0.7.0
 certifi==2021.10.8
 cffi==1.15.0
@@ -13,15 +14,22 @@ imageio-ffmpeg==0.4.2
 isort==5.5.2
 lazy-object-proxy==1.4.3
 mccabe==0.6.1
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-service==2.4.0
 moviepy==1.0.3
+numexpr @ file:///tmp/build/80754af9/numexpr_1618856527787/work
 numpy==1.19.4
 opencv-python==4.4.0.46
+pandas==1.3.4
 pdfminer.six==20211012
 proglog==0.1.9
 pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
 pylint==2.6.0
 pyOpenSSL @ file:///tmp/build/80754af9/pyopenssl_1608057966937/work
 PySocks @ file:///tmp/build/80754af9/pysocks_1594394576006/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytz==2021.3
 requests==2.26.0
 selenium==3.141.0
 six @ file:///tmp/build/80754af9/six_1623709665295/work
