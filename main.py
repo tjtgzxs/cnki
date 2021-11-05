@@ -77,6 +77,8 @@ def open_url():
         driver.find_element_by_id('PageNext').click()
         time.sleep(20)
         get_detail(driver)
+    print("爬取Finished")
+    driver.close()
 
 
 def get_detail(driver):
