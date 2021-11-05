@@ -67,6 +67,10 @@ def open_url():
     time.sleep(2)
     driver.find_element_by_id('page28').click()
     time.sleep(2)
+    driver.find_element_by_id('page32').click()
+    time.sleep(2)
+    driver.find_element_by_id('page33').click()
+    time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
         time.sleep(2)
@@ -177,22 +181,23 @@ def get_detail(driver):
             data.append("")
             data.append("")
 
-
-        summary=driver.find_element_by_class_name("abstract-text").text
-        last_year=re_find(summary)
-        if last_year==False:
-            pdf_value=PDFHandle(name=os.path.join(BASE_DIR,os.path.join("pdf", (str(name)))))
-            if pdf_value==False:
-                data.append("")
-            else:
-                last_year2=re_find(pdf_value)
-                if last_year2==False:
+        try:
+            summary=driver.find_element_by_class_name("abstract-text").text
+            last_year=re_find(summary)
+            if last_year==False:
+                pdf_value=PDFHandle(name=os.path.join(BASE_DIR,os.path.join("pdf", (str(name)))))
+                if pdf_value==False:
                     data.append("")
                 else:
-                    data.append(last_year2)
-        else:
-            data.append(last_year)
-
+                    last_year2=re_find(pdf_value)
+                    if last_year2==False:
+                        data.append("")
+                    else:
+                        data.append(last_year2)
+            else:
+                data.append(last_year)
+        except:
+            data.append("")
         append_excel(os.path.join(BASE_DIR,'output.xls'),data,name)
         # print( driver.find_element_by_id("ChDivSummary").text)
         driver.close()
