@@ -63,7 +63,9 @@ def open_url():
     time.sleep(2)
     driver.find_element_by_id('page21').click()
     time.sleep(2)
-    driver.find_element_by_id('page22').click()
+    driver.find_element_by_id('page25').click()
+    time.sleep(2)
+    driver.find_element_by_id('page28').click()
     time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
@@ -163,13 +165,17 @@ def get_detail(driver):
                 data.append(key_data[i])
             except:
                 data.append("")
-        topic=driver.find_element_by_xpath("//div[@class='doc-top']//li[last()-1]/p").text
-        topic_list=topic.split(";")
-        for i in range(0,2):
-            try:
-                data.append(topic_list[i])
-            except:
-                data.append("")
+        try:
+            topic=driver.find_element_by_xpath("//div[@class='doc-top']//li[last()-1]/p").text
+            topic_list=topic.split(";")
+            for i in range(0,2):
+                try:
+                    data.append(topic_list[i])
+                except:
+                    data.append("")
+        except:
+            data.append("")
+            data.append("")
 
 
         summary=driver.find_element_by_class_name("abstract-text").text
