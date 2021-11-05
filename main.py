@@ -77,6 +77,16 @@ def open_url():
     time.sleep(2)
     driver.find_element_by_id('page44').click()
     time.sleep(2)
+    driver.find_element_by_id('page48').click()
+    time.sleep(2)
+    driver.find_element_by_id('page52').click()
+    time.sleep(2)
+    driver.find_element_by_id('page56').click()
+    time.sleep(2)
+    driver.find_element_by_id('page60').click()
+    time.sleep(2)
+    driver.find_element_by_id('page62').click()
+    time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
         time.sleep(2)
@@ -217,6 +227,7 @@ def get_detail(driver):
 def PDFHandle(name):
     output_string = StringIO()
     try:
+        print(name)
         with open(name, 'rb') as in_file:
             parser = PDFParser(in_file)
             doc = PDFDocument(parser)
@@ -227,7 +238,7 @@ def PDFHandle(name):
                 interpreter.process_page(page)
             return output_string.getvalue()
     except:
-        print("未找到{name}.pdf".format(name=name))
+        print("未找到{name}".format(name=name))
         return  False
 
 def re_find(value):
