@@ -87,6 +87,15 @@ def open_url():
     time.sleep(2)
     driver.find_element_by_id('page62').click()
     time.sleep(2)
+
+    driver.find_element_by_id('page66').click()
+    time.sleep(2)
+    driver.find_element_by_id('page69').click()
+    time.sleep(2)
+    driver.find_element_by_id('page73').click()
+    time.sleep(2)
+    driver.find_element_by_id('page77').click()
+    time.sleep(2)
     get_detail(driver)
     while(driver.find_element_by_id('PageNext').is_enabled()):
         time.sleep(2)
