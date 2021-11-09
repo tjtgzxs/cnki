@@ -129,6 +129,9 @@ def open_url():
     get_veri(driver)
     driver.find_element_by_id('page85').click()
     time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page86').click()
+    time.sleep(2)
     get_detail(driver)
 
     while(driver.find_element_by_id('PageNext').is_enabled()):
@@ -158,8 +161,10 @@ def get_veri(driver):
             code = getCode('code.jpg')
             print(code)
             driver.find_element_by_id('vericode').send_keys(code['pic_str'])
+            time.sleep(2)
             driver.find_element_by_id("checkCodeBtn").click()
             time.sleep(10)
+            driver.save_screenshot("example.png")
     except:
         print("no verify")
         time.sleep(2)
@@ -183,6 +188,7 @@ def get_detail(driver):
             code = getCode('code.jpg')
             print(code)
             driver.find_element_by_id('vericode').send_keys(code['pic_str'])
+            time.sleep(2)
             driver.find_element_by_id("checkCodeBtn").click()
             time.sleep(10)
     except:
