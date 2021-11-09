@@ -1,5 +1,5 @@
 
-
+import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -23,6 +23,14 @@ import os
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 from xlutils.copy import  copy
 import configparser
+import sys
+sys.path.append(os.path.dirname(os.path.abspath(__file__))+"/lib")
+print(os.path.dirname(os.path.abspath(__file__))+"/lib")
+from chaojiying import Chaojiying_Client
+def getCode(im_path,type=1902):
+    chaojiying = Chaojiying_Client('tjtgzxs', '1990lljxk', '921890')
+    im = open(im_path, 'rb').read()
+    return chaojiying.PostPic(im, type)
 def open_url():
 
 
@@ -57,46 +65,72 @@ def open_url():
     time.sleep(20)
     driver.find_element_by_id('page9').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page13').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page17').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page21').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page25').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page28').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page32').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page33').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page37').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page41').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page44').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page48').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page52').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page56').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page60').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page62').click()
     time.sleep(2)
+    get_veri(driver)
 
     driver.find_element_by_id('page66').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page69').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page73').click()
     time.sleep(2)
+    get_veri(driver)
     driver.find_element_by_id('page77').click()
     time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page81').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page84').click()
+    time.sleep(2)
     get_detail(driver)
+
     while(driver.find_element_by_id('PageNext').is_enabled()):
         time.sleep(2)
         driver.find_element_by_id('PageNext').click()
@@ -105,8 +139,55 @@ def open_url():
     print("爬取Finished")
     driver.close()
 
+def get_veri(driver):
+    # 处理验证码
+    try:
+        if driver.find_element_by_id("checkCodeBtn").is_enabled():
+            print("需要验证码")
+            with open('code.jpg', 'wb') as f:
+                session = requests.session()
+                img_src = driver.find_element_by_id("changeVercode").get_attribute('src')
+                print(img_src)
+                # img_src="https://kns.cnki.net/"+img_src
+                # img_src = "https://so.gushiwen.cn" + img_src
+                headers = {
+                    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
+                }
+                img_src = session.get(img_src)
+                f.write(img_src.content)
+            code = getCode('code.jpg')
+            print(code)
+            driver.find_element_by_id('vericode').send_keys(code['pic_str'])
+            driver.find_element_by_id("checkCodeBtn").click()
+            time.sleep(10)
+    except:
+        print("no verify")
+        time.sleep(2)
 
 def get_detail(driver):
+    # 处理验证码
+    try:
+        if driver.find_element_by_id("checkCodeBtn").is_enabled():
+            print("需要验证码")
+            with open('code.jpg', 'wb') as f:
+                session = requests.session()
+                img_src = driver.find_element_by_id("changeVercode").get_attribute('src')
+                print(img_src)
+                img_src="https://kns.cnki.net/"+img_src
+                # img_src = "https://so.gushiwen.cn" + img_src
+                headers = {
+                    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
+                }
+                img_src = session.get(img_src, headers=headers)
+                f.write(img_src.content)
+            code = getCode('code.jpg')
+            print(code)
+            driver.find_element_by_id('vericode').send_keys(code['pic_str'])
+            driver.find_element_by_id("checkCodeBtn").click()
+            time.sleep(10)
+    except:
+        print("no verify")
+        time.sleep(2)
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     tr_list = driver.find_elements_by_xpath("//table[@class='result-table-list']/tbody/tr")
 
