@@ -127,7 +127,7 @@ def open_url():
     driver.find_element_by_id('page81').click()
     time.sleep(2)
     get_veri(driver)
-    driver.find_element_by_id('page84').click()
+    driver.find_element_by_id('page85').click()
     time.sleep(2)
     get_detail(driver)
 
@@ -173,12 +173,12 @@ def get_detail(driver):
                 session = requests.session()
                 img_src = driver.find_element_by_id("changeVercode").get_attribute('src')
                 print(img_src)
-                img_src="https://kns.cnki.net/"+img_src
+                # img_src="https://kns.cnki.net/"+img_src
                 # img_src = "https://so.gushiwen.cn" + img_src
                 headers = {
                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
                 }
-                img_src = session.get(img_src, headers=headers)
+                img_src = session.get(img_src)
                 f.write(img_src.content)
             code = getCode('code.jpg')
             print(code)
