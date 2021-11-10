@@ -347,7 +347,10 @@ def PDFHandle(name):
         return  False
 
 def re_find(value):
-
+    value=value.replace("'","")
+    value=value.replace("\"","")
+    value=value.replace("-","")
+    value=value.replace(";","")
     list1=[r'第\d+期CGSS',r"第d+期中国综合社会调查",r"CGSS第\d+期",r"中国综合社会调查第\d+期"]
     dict1=[2003,2005,2006,2008,2010,2011,2012,2013,2015,2017]
     for item in list1:
