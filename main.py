@@ -146,6 +146,10 @@ def get_veri(driver):
     # 处理验证码
     try:
         if driver.find_element_by_id("checkCodeBtn").is_enabled():
+            c = driver.get_cookies()
+            cookies = {}
+            for cookie in c:
+                cookies[cookie['name']] = cookie['value']
             print("需要验证码")
             with open('code.jpg', 'wb') as f:
                 session = requests.session()
@@ -156,14 +160,14 @@ def get_veri(driver):
                 headers = {
                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
                 }
-                img_src = session.get(img_src)
+                img_src = session.get(img_src,cookies=cookies)
                 f.write(img_src.content)
             code = getCode('code.jpg')
             print(code)
             driver.find_element_by_id('vericode').send_keys(code['pic_str'])
             time.sleep(2)
             driver.find_element_by_id("checkCodeBtn").click()
-            time.sleep(10)
+            time.sleep(50)
             driver.save_screenshot("example.png")
     except:
         print("no verify")
@@ -173,6 +177,10 @@ def get_detail(driver):
     # 处理验证码
     try:
         if driver.find_element_by_id("checkCodeBtn").is_enabled():
+            c=driver.get_cookies()
+            cookies = {}
+            for cookie in c:
+                cookies[cookie['name']] = cookie['value']
             print("需要验证码")
             with open('code.jpg', 'wb') as f:
                 session = requests.session()
@@ -183,14 +191,15 @@ def get_detail(driver):
                 headers = {
                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
                 }
-                img_src = session.get(img_src)
+                img_src = session.get(img_src,cookies=cookies)
                 f.write(img_src.content)
             code = getCode('code.jpg')
             print(code)
             driver.find_element_by_id('vericode').send_keys(code['pic_str'])
             time.sleep(2)
             driver.find_element_by_id("checkCodeBtn").click()
-            time.sleep(10)
+            time.sleep(50)
+            driver.save_screenshot("example.png")
     except:
         print("no verify")
         time.sleep(2)
