@@ -130,7 +130,28 @@ def open_url():
     driver.find_element_by_id('page85').click()
     time.sleep(2)
     get_veri(driver)
-    driver.find_element_by_id('page86').click()
+    driver.find_element_by_id('page89').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page93').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page97').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page101').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page104').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page106').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page110').click()
+    time.sleep(2)
+    get_veri(driver)
+    driver.find_element_by_id('page111').click()
     time.sleep(2)
     get_detail(driver)
 
@@ -223,7 +244,10 @@ def get_detail(driver):
         windows = driver.window_handles
         detail=driver.switch_to.window(windows[-1])
         authorlist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[1]//a")
-        companylist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[2]//a|//div[@class='brief']/div/h3[2]//span")
+        try:
+            companylist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[2]//a|//div[@class='brief']/div/h3[2]//span")
+        except:
+            companylist=[]
         company_data=[]
         author_data=[]
         for author in authorlist:
