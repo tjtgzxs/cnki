@@ -13,6 +13,7 @@ for i in range(0,len(df)):
         pdf_value = main.PDFHandle(str(BASE_DIR+os.sep+'pdf'+os.sep+df.iloc[i]['论文题目']+".pdf"))
         if(pdf_value!=False):
             new_value=main.re_find(pdf_value)
+            print(new_value)
             if(new_value==False):
                 new_value=""
             df.loc[i,"使用数据（最新）"]=new_value

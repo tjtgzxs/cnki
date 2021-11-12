@@ -13,6 +13,13 @@ def change_name():
         tmp_name = tmp_name.replace("'", "")
         tmp_name=tmp_name.replace("-","")
         tmp_name=tmp_name.replace(";","")
+        tmp_name = tmp_name.replace(":", "")
+        tmp_name = tmp_name.replace("!", "")
+        tmp_name = tmp_name.replace("！", "")
+        tmp_name = tmp_name.replace("：", "")
+        tmp_name = tmp_name.replace("？", "")
+        tmp_name = tmp_name.replace("?", "")
+        tmp_name = tmp_name.replace("、", "")
         # tmp_name=tmp_name.replace("")
         new_name = pdf_dir + tmp_name + pdf_extend
         try:
