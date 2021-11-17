@@ -1,4 +1,3 @@
-
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -16,31 +15,34 @@ from pdfminer.pdfdocument import PDFDocument
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
 from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfparser import PDFParser
-import  re
+import re
 import xlrd
 import xlwt
 import os
 from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
-from xlutils.copy import  copy
+from xlutils.copy import copy
 import configparser
 import sys
-sys.path.append(os.path.dirname(os.path.abspath(__file__))+"/lib")
-print(os.path.dirname(os.path.abspath(__file__))+"/lib")
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)) + "/lib")
+print(os.path.dirname(os.path.abspath(__file__)) + "/lib")
 from chaojiying import Chaojiying_Client
-def getCode(im_path,type=1902):
+
+
+def getCode(im_path, type=1902):
     chaojiying = Chaojiying_Client('tjtgzxs', '1990lljxk', '921890')
     im = open(im_path, 'rb').read()
     return chaojiying.PostPic(im, type)
+
+
 def open_url():
-
-
     config = configparser.ConfigParser()
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
     config.read(os.path.join(BASE_DIR, 'conf.ini'), encoding="utf-8")
     chrome_options = Options()
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--no-sandbox')
-    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(),options=chrome_options)
+    driver = webdriver.Chrome(executable_path=ChromeDriverManager().install(), options=chrome_options)
     driver.maximize_window()
     print(111)
     driver.get("https://www.cnki.net/")
@@ -64,13 +66,14 @@ def open_url():
     driver.find_element_by_link_text("50").click()  #
     time.sleep(20)
 
-    while(driver.find_element_by_id('PageNext').is_enabled()):
+    while (driver.find_element_by_id('PageNext').is_enabled()):
         time.sleep(2)
         driver.find_element_by_id('PageNext').click()
         time.sleep(20)
         get_detail(driver)
     print("爬取Finished")
     driver.close()
+
 
 def get_veri(driver):
     # 处理验证码
@@ -90,7 +93,7 @@ def get_veri(driver):
                 headers = {
                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
                 }
-                img_src = session.get(img_src,cookies=cookies)
+                img_src = session.get(img_src, cookies=cookies)
                 f.write(img_src.content)
             code = getCode('code.jpg')
             print(code)
@@ -103,11 +106,12 @@ def get_veri(driver):
         print("no verify")
         time.sleep(2)
 
+
 def get_detail(driver):
     # 处理验证码
     try:
         if driver.find_element_by_id("checkCodeBtn").is_enabled():
-            c=driver.get_cookies()
+            c = driver.get_cookies()
             cookies = {}
             for cookie in c:
                 cookies[cookie['name']] = cookie['value']
@@ -121,7 +125,7 @@ def get_detail(driver):
                 headers = {
                     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.164 Safari/537.36"
                 }
-                img_src = session.get(img_src,cookies=cookies)
+                img_src = session.get(img_src, cookies=cookies)
                 f.write(img_src.content)
             code = getCode('code.jpg')
             print(code)
@@ -137,8 +141,8 @@ def get_detail(driver):
     tr_list = driver.find_elements_by_xpath("//table[@class='result-table-list']/tbody/tr")
 
     for tr in tr_list:
-        data=[]
-        name=tr.find_element_by_class_name("name").text
+        data = []
+        name = tr.find_element_by_class_name("name").text
         data.append(tr.find_element_by_class_name("name").text)
         # data.append(tr.find_element_by_class_name("author").text)
         source = tr.find_element_by_class_name("source").text
@@ -146,27 +150,28 @@ def get_detail(driver):
         quote = tr.find_element_by_class_name("quote").text
         download = tr.find_element_by_class_name("download").text
         # print(quote,download)
-        window=driver.current_window_handle
-        detail_button=tr.find_element_by_class_name("fz14").click()
+        window = driver.current_window_handle
+        detail_button = tr.find_element_by_class_name("fz14").click()
         # webdriver.ActionChains(driver).move_to_element(name).click(name).perform()
         time.sleep(10)
         windows = driver.window_handles
-        detail=driver.switch_to.window(windows[-1])
-        authorlist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[1]//a")
+        detail = driver.switch_to.window(windows[-1])
+        authorlist = driver.find_elements_by_xpath("//div[@class='brief']/div/h3[1]//a")
         try:
-            companylist=driver.find_elements_by_xpath("//div[@class='brief']/div/h3[2]//a|//div[@class='brief']/div/h3[2]//span")
+            companylist = driver.find_elements_by_xpath(
+                "//div[@class='brief']/div/h3[2]//a|//div[@class='brief']/div/h3[2]//span")
         except:
-            companylist=[]
-        company_data=[]
-        author_data=[]
+            companylist = []
+        company_data = []
+        author_data = []
         for author in authorlist:
-            author_text=author.text
+            author_text = author.text
             author_data.append(author_text.rstrip('123456789'))
 
         for company in companylist:
-            company_text=company.text
-            if company_text.find(".")>-1:
-                company_data.append(company_text[company_text.find(".")+1:])
+            company_text = company.text
+            if company_text.find(".") > -1:
+                company_data.append(company_text[company_text.find(".") + 1:])
             else:
                 company_data.append(company_text)
         try:
@@ -198,15 +203,15 @@ def get_detail(driver):
         data.append(date)
         data.append(source)
         toplist = driver.find_elements_by_xpath("//div[@class='top-tip']/a")
-        core_flag=False
-        CS_flag=False
+        core_flag = False
+        CS_flag = False
         for top in toplist:
             print(top.text)
-            if top.text.find("核心")>-1:
-                core_flag=True
-            if top.text.find("CSSCI")>-1:
-                CS_flag=True
-        if core_flag==True:
+            if top.text.find("核心") > -1:
+                core_flag = True
+            if top.text.find("CSSCI") > -1:
+                CS_flag = True
+        if core_flag == True:
             data.append("1")
         else:
             data.append("0")
@@ -217,18 +222,18 @@ def get_detail(driver):
         data.append(str(quote))
         data.append(str(download))
         keylist = driver.find_elements_by_xpath("//p[@class='keywords']/a")
-        key_data=[]
-        for key in  keylist:
+        key_data = []
+        for key in keylist:
             key_data.append(key.text.rstrip(";"))
-        for i in range(0,4):
+        for i in range(0, 4):
             try:
                 data.append(key_data[i])
             except:
                 data.append("")
         try:
-            topic=driver.find_element_by_xpath("//div[@class='doc-top']//li[last()-1]/p").text
-            topic_list=topic.split(";")
-            for i in range(0,2):
+            topic = driver.find_element_by_xpath("//div[@class='doc-top']//li[last()-1]/p").text
+            topic_list = topic.split(";")
+            for i in range(0, 2):
                 try:
                     data.append(topic_list[i])
                 except:
@@ -238,15 +243,15 @@ def get_detail(driver):
             data.append("")
 
         try:
-            summary=driver.find_element_by_class_name("abstract-text").text
-            last_year=re_find(summary)
-            if last_year==False:
-                pdf_value=PDFHandle(name=os.path.join(BASE_DIR,os.path.join("pdf", (str(name)))))
-                if pdf_value==False:
+            summary = driver.find_element_by_class_name("abstract-text").text
+            last_year = re_find(summary)
+            if last_year == False:
+                pdf_value = PDFHandle(name=os.path.join(BASE_DIR, os.path.join("pdf", (str(name)))))
+                if pdf_value == False:
                     data.append("")
                 else:
-                    last_year2=re_find(pdf_value)
-                    if last_year2==False:
+                    last_year2 = re_find(pdf_value)
+                    if last_year2 == False:
                         data.append("")
                     else:
                         data.append(last_year2)
@@ -254,7 +259,7 @@ def get_detail(driver):
                 data.append(last_year)
         except:
             data.append("")
-        append_excel(os.path.join(BASE_DIR,'output.xls'),data,name)
+        append_excel(os.path.join(BASE_DIR, 'output.xls'), data, name)
         # print( driver.find_element_by_id("ChDivSummary").text)
         driver.close()
         driver.switch_to.window(window)
@@ -288,50 +293,49 @@ def PDFHandle(name):
             return output_string.getvalue()
     except:
         print("未找到{name}".format(name=name))
-        return  False
+        return False
+
 
 def re_find(value):
-
-    list1=[r'第\d+期CGSS',r"第d+期中国综合社会调查",r"CGSS第\d+期",r"中国综合社会调查第\d+期"]
-    dict1=[2003,2005,2006,2008,2010,2011,2012,2013,2015,2017]
+    list1 = [r'第\d+期CGSS', r'第\d+期的CGSS', r"第d+期中国综合社会调查", r"第d+期的中国综合社会调查", r"CGSS第\d+期", r"CGSS的第\d+期",
+             r"中国综合社会调查第\d+期", r"中国综合社会调查的第\d+期"]
+    dict1 = [2003, 2005, 2006, 2008, 2010, 2011, 2012, 2013, 2015, 2017]
     for item in list1:
-        m=re.findall(item,value)
-        if len(m)>0:
-            number=re.findall(r"\d+",m[0])
-            return  dict1[int(number[0])-1]
-    list2=[r'\d+年CGSS',r'\d+年中国综合社会调查',r'CGSS\d+',r'中国综合社会调查\d+']
+        m = re.findall(item, value)
+        if len(m) > 0:
+            number = re.findall(r"\d+", m[0])
+            return dict1[int(number[0]) - 1]
+    list2 = [r'\d+年CGSS', r'CGSS\d+年', r'\d+年间CGSS', r'\d+年间的CGSS', r'\d+CGSS', r'\d+ CGSS', r'CGSS\d+', r'CGSS \d+',
+             r'CGSS(\d+)-(\d+)', r'CGSS \(\d+\)', r'CGSS\(\d+\)',
+             r'\d+年中国综合社会调查', r'\d+年间中国综合社会调查', r'\d+年间的中国综合社会调查', r'\d+年的中国综合社会调查', r'\d+ 中国综合社会调查', r'中国综合社会调查\d+',
+             r'中国综合社会调查 \d+', r'中国综合社会调查\(\d+\)', r'中国综合社会调查 \(\d+\)']
+
     for item in list2:
-        m=re.findall(item,value)
-        if len(m)>0:
-            number=re.findall(r"\d+",m[0])
-            return  number[0]
+        m = re.findall(item, value)
+        if len(m) > 0:
+            number = re.findall(r"\d+", m[0])
+            return number[0]
     return False
 
-def append_excel(path,value,name=""):
-    index=len(value)
-    workbook=xlrd.open_workbook(path)
-    sheets=workbook.sheet_names()
-    worksheet=workbook.sheet_by_name(sheets[0])
-    rows_old=worksheet.nrows
-    new_workbook=copy(workbook)
-    new_worksheet=new_workbook.get_sheet(0)
-    for i in range(0,index):
-       new_worksheet.write(rows_old,i,value[i])
+
+def append_excel(path, value, name=""):
+    index = len(value)
+    workbook = xlrd.open_workbook(path)
+    sheets = workbook.sheet_names()
+    worksheet = workbook.sheet_by_name(sheets[0])
+    rows_old = worksheet.nrows
+    new_workbook = copy(workbook)
+    new_worksheet = new_workbook.get_sheet(0)
+    for i in range(0, index):
+        new_worksheet.write(rows_old, i, value[i])
     new_workbook.save(path)
     print("{name}追加成功".format(name=name))
 
 
-
-
-
-
-
-
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    value=open_url()
+    value = open_url()
     # print(re_find("大苏打飒飒的,第5期CGSS的具体呢荣，哈哈哈哈"))
-
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 
